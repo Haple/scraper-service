@@ -1,0 +1,28 @@
+{
+  "name": "scraper-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haple/scraper-service.git"
+  },
+  "keywords": [
+    "scraper"
+  ],
+  "author": "Aleph Santos Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Haple/scraper-service/issues"
+  },
+  "homepage": "https://github.com/Haple/scraper-service#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  }
+}
