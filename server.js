@@ -3,7 +3,6 @@ const app = express();
 const bodyParser = require('body-parser');
 var request = require('request');
 var cheerio = require('cheerio');
-var products = [];
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -16,6 +15,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/get/product/:product', (req, res) => {
+
+  var products = [];
 
   request(`https://www.americanas.com.br/busca?conteudo=${req.params.product}/`, function (error, response, body) {
     if (error) {
@@ -35,8 +36,6 @@ app.get('/get/product/:product', (req, res) => {
         "price": price,
         "link": "https://www.americanas.com.br" + productLink
       });
-
-
 
     });
 
