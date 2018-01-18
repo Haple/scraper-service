@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-app.get('/get/product/:product', (req, res) => {
+app.get('/product/:product', (req, res) => {
 
   var products = [];
 
